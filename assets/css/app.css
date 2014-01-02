@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* Apply a natural box layout model to all elements (Credit Paul Irish)*/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+/* Add-on for IE10 View Port Support from W3C */
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
